@@ -18,13 +18,27 @@ const Events = () => {
       <div className="flex justify-center w-full gap-10">
         <button
           className="w-10"
-          onClick={() => animate(scope.current, { x: -100 }, { duration: 2 }) }
+          onClick={() => animate(
+            scope.current,
+            {
+              x: -100,
+              backgroundColor: '#00FF00',
+            },
+            { duration: 2 },
+          )}
         >
           LEFT
         </button>
         <button
           className="w-10"
-          onClick={() => animate(scope.current, { x: 100 }, { duration: 2 }) }
+          onClick={() => animate(
+            scope.current,
+            {
+              x: 100,
+              backgroundColor: '#0000FF',
+            },
+            { duration: 2 },
+          )}
         >
           RIGHT
         </button>
